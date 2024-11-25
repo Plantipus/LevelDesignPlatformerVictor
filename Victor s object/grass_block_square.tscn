@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bnktx0m1x7q4m"]
+
+[ext_resource type="PackedScene" uid="uid://ct3jqgtvmr86q" path="res://models/props/block-grass-large.glb" id="1_0l8qi"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_hyp1a"]
+
+[node name="Grass block square" type="Node3D"]
+
+[node name="block-grass-large2" parent="." instance=ExtResource("1_0l8qi")]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_hyp1a")
+skeleton = NodePath("../block-grass-large2")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]

@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://ld10wlrfhdmm"]
+
+[ext_resource type="PackedScene" uid="uid://dl2ed4gkybggf" path="res://objects/player.tscn" id="1_n8iae"]
+[ext_resource type="PackedScene" uid="uid://bn0iedr5b0xbv" path="res://models/core_models/platform-large.glb" id="2_ta7ka"]
+
+[sub_resource type="Environment" id="Environment_7hpra"]
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_oaman"]
+
+[node name="My world" type="Node3D"]
+
+[node name="Player" parent="." instance=ExtResource("1_n8iae")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.147232, 0.5, -0.00551486)
+
+[node name="platform-large" parent="." instance=ExtResource("2_ta7ka")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.564638, -0.333315, 0.0425532)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.92709, 3.82706)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_7hpra")
+camera_attributes = SubResource("CameraAttributesPractical_oaman")
