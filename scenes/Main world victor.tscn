@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=3 uid="uid://dmtd4jk4ugt8c"]
+[gd_scene load_steps=39 format=3 uid="uid://dmtd4jk4ugt8c"]
 
 [ext_resource type="Environment" uid="uid://bqnqgflivjvue" path="res://scenes/main-environment.tres" id="1_oygcb"]
 [ext_resource type="PackedScene" uid="uid://dl2ed4gkybggf" path="res://objects/player.tscn" id="2_qbbhe"]
@@ -40,6 +40,13 @@ dof_blur_far_distance = 0.01
 [sub_resource type="Curve3D" id="Curve3D_5n82a"]
 _data = {
 "points": PackedVector3Array(0, 0, 0, 0, 0, 0, 13.6886, 9.3156, -12.1731, 0, 0, 0, 0, 0, 0, -5.13373, 9.71543, -12.2127),
+"tilts": PackedFloat32Array(0, 0)
+}
+point_count = 2
+
+[sub_resource type="Curve3D" id="Curve3D_5fw0d"]
+_data = {
+"points": PackedVector3Array(0, 0, 0, -2.17169, 0.22877, 0.474637, -2.17169, 0.22877, 0.474637, 0, 0, 0, 0, 0, 0, -23.882, 0.229, 0.475),
 "tilts": PackedFloat32Array(0, 0)
 }
 point_count = 2
@@ -86,6 +93,13 @@ fov = 40.0
 
 [node name="World" type="Node3D" parent="."]
 
+[node name="platform-moving2" parent="World" instance=ExtResource("4_rb4qo")]
+transform = Transform3D(1.555, 0, 0, 0, 1.555, 0, 0, 0, 1.555, -2.17169, 0.22877, 0.474637)
+
+[node name="button" parent="World/platform-moving2" node_paths=PackedStringArray("target") instance=ExtResource("9_140rh")]
+transform = Transform3D(0.643087, 0, 0, 0, 0.643087, 0, 0, 0, 0.643087, 0.119479, 0.468152, 0.0295368)
+target = NodePath("../../moving_object_path3")
+
 [node name="platform-moving" parent="World" instance=ExtResource("4_rb4qo")]
 transform = Transform3D(1.295, 0, 0, 0, 1.295, 0, 0, 0, 1.295, 13.7767, 9.01353, -12.2084)
 
@@ -107,6 +121,13 @@ target = NodePath("../door2")
 [node name="moving_object_path" parent="World" node_paths=PackedStringArray("object_to_move") instance=ExtResource("6_222cy")]
 curve = SubResource("Curve3D_5n82a")
 object_to_move = NodePath("../platform-moving")
+is_on_from_start = false
+ping_pong = true
+
+[node name="moving_object_path3" parent="World" node_paths=PackedStringArray("object_to_move") instance=ExtResource("6_222cy")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+curve = SubResource("Curve3D_5fw0d")
+object_to_move = NodePath("../platform-moving2")
 is_on_from_start = false
 ping_pong = true
 
