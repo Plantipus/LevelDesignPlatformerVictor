@@ -102,10 +102,10 @@ fov = 40.0
 [node name="World" type="Node3D" parent="."]
 
 [node name="platform-moving2" parent="World" instance=ExtResource("4_rb4qo")]
-transform = Transform3D(1.555, 0, 0, 0, 1.555, 0, 0, 0, 1.555, -2.17169, 0.22877, 0.474637)
+transform = Transform3D(2.62, 0, 0, 0, 2.62, 0, 0, 0, 2.62, -2.17169, 0.22877, -1.24572)
 
 [node name="button" parent="World/platform-moving2" node_paths=PackedStringArray("target") instance=ExtResource("9_140rh")]
-transform = Transform3D(0.643087, 0, 0, 0, 0.643087, 0, 0, 0, 0.643087, 0.119479, 0.468152, 0.0295368)
+transform = Transform3D(0.458, 0, 0, 0, 0.458, 0, 0, 0, 0.458, 0.119479, 0.468152, 0.0295368)
 target = NodePath("../../moving_object_path3")
 
 [node name="platform-moving" parent="World" instance=ExtResource("4_rb4qo")]
@@ -218,13 +218,13 @@ look_at_door_when_opens = true
 [node name="player_kill_volume" parent="World" instance=ExtResource("11_j8m4m")]
 
 [node name="checkpoint" parent="World" instance=ExtResource("12_3wsk8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.915, 0.922331, 6.74381)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.915, 1.703, 6.74381)
 
 [node name="checkpoint3" parent="World" instance=ExtResource("12_3wsk8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.6648, 7.89408, -11.6426)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.6648, 8.89464, -11.6426)
 
 [node name="checkpoint2" parent="World" instance=ExtResource("12_3wsk8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.8259, 8.29957, -11.1941)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.8259, 9.23376, -11.1941)
 
 [node name="platform2" parent="World" instance=ExtResource("13_1l6gd")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.9609, 8.2586, -11.1525)
