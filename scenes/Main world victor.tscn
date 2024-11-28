@@ -1,9 +1,8 @@
-[gd_scene load_steps=52 format=3 uid="uid://dmtd4jk4ugt8c"]
+[gd_scene load_steps=51 format=3 uid="uid://dmtd4jk4ugt8c"]
 
 [ext_resource type="Environment" uid="uid://bqnqgflivjvue" path="res://scenes/main-environment.tres" id="1_oygcb"]
 [ext_resource type="PackedScene" uid="uid://dl2ed4gkybggf" path="res://objects/player.tscn" id="2_qbbhe"]
 [ext_resource type="Script" path="res://scripts/view.gd" id="3_gxn3q"]
-[ext_resource type="PackedScene" uid="uid://bpharv43ulngb" path="res://objects/platform_moving.tscn" id="4_rb4qo"]
 [ext_resource type="PackedScene" uid="uid://bs65o07otxbmm" path="res://objects/moving_object_path_3d.tscn" id="6_222cy"]
 [ext_resource type="PackedScene" uid="uid://dhxok27jxvik8" path="res://objects/flag.tscn" id="7_uwidt"]
 [ext_resource type="PackedScene" uid="uid://dwvhgrcyestak" path="res://objects/trap_spikes.tscn" id="8_nvysk"]
@@ -60,7 +59,7 @@ shadow_offset = Vector2(2, 2)
 
 [sub_resource type="Curve3D" id="Curve3D_5fw0d"]
 _data = {
-"points": PackedVector3Array(0, 0, 0, -2.17169, 0.22877, 0.474637, -2.17169, -0.288072, 0.474637, 0, 0, 0, 0, 0, 0, -23.882, -0.802592, 0.475),
+"points": PackedVector3Array(0, 0, 0, -2.17169, 0.22877, 0.474637, -2.17169, -0.288072, 0.474637, 0, 0, 0, 0, 0, 0, -20.706, -0.802592, 0.475),
 "tilts": PackedFloat32Array(0, 0)
 }
 point_count = 2
@@ -150,7 +149,7 @@ environment = ExtResource("1_oygcb")
 camera_attributes = SubResource("CameraAttributesPractical_u8ojw")
 
 [node name="Player" parent="." node_paths=PackedStringArray("view") instance=ExtResource("2_qbbhe")]
-transform = Transform3D(-0.436802, 0, -0.899558, 0, 1, 0, 0.899558, 0, -0.436802, -2.27629, 2.36108, 14.171)
+transform = Transform3D(-0.436802, 0, -0.899558, 0, 1, 0, 0.899558, 0, -0.436802, -2.27629, 2.36108, 7.73534)
 view = NodePath("../View")
 
 [node name="View" type="Node3D" parent="." node_paths=PackedStringArray("target") groups=["View"]]
@@ -316,6 +315,7 @@ target = NodePath("../../moving_object_path4")
 [node name="moving_object_path4" parent="Start room" node_paths=PackedStringArray("object_to_move") instance=ExtResource("6_222cy")]
 curve = SubResource("Curve3D_5fw0d")
 object_to_move = NodePath("../platform-moving")
+movement_speed = 2.0
 is_on_from_start = false
 ping_pong = true
 
@@ -341,6 +341,7 @@ target = NodePath("../../moving path secret")
 [node name="moving path secret" parent="Start room" node_paths=PackedStringArray("object_to_move") instance=ExtResource("6_222cy")]
 curve = SubResource("Curve3D_goimg")
 object_to_move = NodePath("../platform-moving start room")
+movement_speed = 2.0
 is_on_from_start = false
 ping_pong = true
 
@@ -421,16 +422,17 @@ transform = Transform3D(1.705, 0, 0, 0, 1.705, 0, 0, 0, 1.705, 10.9286, -0.50842
 
 [node name="Section 2" type="Node3D" parent="."]
 
-[node name="platform-moving" parent="Section 2" instance=ExtResource("4_rb4qo")]
-transform = Transform3D(1.295, 0, 0, 0, 1.295, 0, 0, 0, 1.295, 13.7767, 9.01353, -12.2084)
+[node name="platform-moving" parent="Section 2" instance=ExtResource("34_lvoc1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.6878, 8.64334, -12.1391)
 
 [node name="button" parent="Section 2/platform-moving" node_paths=PackedStringArray("target") instance=ExtResource("9_140rh")]
-transform = Transform3D(0.772201, 0, 0, 0, 0.772201, 0, 0, 0, 0.772201, -0.0403957, 0.458708, 0.0254278)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0365782, 0.964221, -0.0363455)
 target = NodePath("../../moving_object_path")
 
 [node name="moving_object_path" parent="Section 2" node_paths=PackedStringArray("object_to_move") instance=ExtResource("6_222cy")]
 curve = SubResource("Curve3D_5n82a")
 object_to_move = NodePath("../platform-moving")
+movement_speed = 2.0
 is_on_from_start = false
 ping_pong = true
 
@@ -621,11 +623,20 @@ transform = Transform3D(2.04, 0, 0, 0, 2.04, 0, 0, 0, 2.095, -12.5211, 8.47333, 
 [node name="wall15" parent="Section 2" instance=ExtResource("17_4kubu")]
 transform = Transform3D(2.04, 0, 0, 0, 2.04, 0, 0, 0, 2.04, -4.62402, 8.47333, -14.4317)
 
+[node name="wall21" parent="Section 2" instance=ExtResource("17_4kubu")]
+transform = Transform3D(2.04, 0, 0, 0, 4.1, 0, 0, 0, 9.67, -7.24543, 8.47333, -3.34752)
+
+[node name="wall20" parent="Section 2" instance=ExtResource("17_4kubu")]
+transform = Transform3D(2.04, 0, 0, 0, 2.04, 0, 0, 0, 2.04, -4.62402, 8.47333, -8.93153)
+
 [node name="wall16" parent="Section 2" instance=ExtResource("17_4kubu")]
 transform = Transform3D(-8.91712e-08, 0, 2.685, 0, 2.04, 0, -2.04, 0, -1.17365e-07, -5.76335, 8.47333, -15.6122)
 
 [node name="wall17" parent="Section 2" instance=ExtResource("17_4kubu")]
 transform = Transform3D(-8.91712e-08, 0, 2.735, 0, 2.04, 0, -2.04, 0, -1.19551e-07, -6.10323, 8.47333, -8.0874)
+
+[node name="wall22" parent="Section 2" instance=ExtResource("17_4kubu")]
+transform = Transform3D(-8.91712e-08, 0, 2.735, 0, 2.04, 0, -2.04, 0, -1.19551e-07, -8.44298, 10.5616, 1.72439)
 
 [node name="wall18" parent="Section 2" instance=ExtResource("17_4kubu")]
 transform = Transform3D(-8.91712e-08, 0, 3.255, 0, 2.04, 0, -2.04, 0, -1.42281e-07, -10.9353, 8.47333, -7.93487)
@@ -1093,18 +1104,18 @@ transform = Transform3D(-0.609481, 0, -0.792801, 0, 1, 0, 0.792801, 0, -0.609481
 [node name="block-grass-edge57" parent="Section 5/block-grass-edge2" instance=ExtResource("33_8nlb0")]
 transform = Transform3D(-0.997253, 0, 0.0740736, 0, 1, 0, -0.0740736, 0, -0.997253, -0.0862249, -4.22859, 6.61352)
 
-[node name="platform-moving3" parent="Section 5" instance=ExtResource("4_rb4qo")]
-transform = Transform3D(-1.44656, 0, 1.28518, 0, 1.935, 0, -1.28518, 0, -1.44656, -56.0576, -14.1801, -13.8452)
+[node name="platform-moving" parent="Section 5" instance=ExtResource("34_lvoc1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -55.99, -14.2205, -13.9543)
 
-[node name="button5" parent="Section 5/platform-moving3" node_paths=PackedStringArray("target") instance=ExtResource("9_140rh")]
-transform = Transform3D(0.516796, 0, -2.98023e-08, 0, 0.516796, 0, 2.98023e-08, 0, 0.516796, 0.0113201, 0.456506, 0.0653725)
+[node name="button5" parent="Section 5/platform-moving" node_paths=PackedStringArray("target") instance=ExtResource("9_140rh")]
+transform = Transform3D(-0.747576, 0, 0.664176, 0, 1, 0, -0.664176, 0, -0.747576, 0, 0.923723, 0)
 target = NodePath("../../moving_object_path3")
 
 [node name="moving_object_path3" parent="Section 5" node_paths=PackedStringArray("object_to_move") instance=ExtResource("6_222cy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3447, 0.913404, -1.9967)
 curve = SubResource("Curve3D_u8q8u")
-object_to_move = NodePath("../platform-moving3")
-movement_speed = 4.0
+object_to_move = NodePath("../platform-moving")
+movement_speed = 3.5
 is_on_from_start = false
 ping_pong = true
 
@@ -1118,6 +1129,9 @@ transform = Transform3D(4.23, 0, 0, 0, 4.23, 0, 0, 0, 8.125, -0.805135, -3.61537
 
 [node name="flag" parent="Section 6" instance=ExtResource("7_uwidt")]
 transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, -1.163, 0.462016, 26.7793)
+
+[node name="checkpoint2" parent="Section 6" instance=ExtResource("12_3wsk8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.671882, 0.714723, 13.2333)
 
 [node name="saw" parent="." instance=ExtResource("35_otxjv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.06444, 0.657947, 16.383)
