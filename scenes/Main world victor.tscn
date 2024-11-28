@@ -1128,7 +1128,7 @@ transform = Transform3D(-4.7864e-08, 0, 6.92, 0, 2.04, 0, -1.095, 0, -3.02483e-0
 transform = Transform3D(-4.7864e-08, 0, 6.94, 0, 2.04, 0, -1.095, 0, -3.03357e-07, 2.32124, 0.239309, 15.6193)
 
 [node name="wall14" parent="Section 6" instance=ExtResource("17_4kubu")]
-transform = Transform3D(-4.7864e-08, 0, 3.9, 0, 2.04, 0, -1.095, 0, -1.70474e-07, 3.23146, 0.239309, 18.5053)
+transform = Transform3D(-4.7864e-08, 0, 6.455, 0, 2.04, 0, -1.095, 0, -2.82157e-07, 4.05265, 0.239309, 18.5053)
 
 [node name="wall15" parent="Section 6" instance=ExtResource("17_4kubu")]
 transform = Transform3D(-4.7864e-08, 0, 6.73, 0, 2.04, 0, -1.095, 0, -2.94178e-07, -5.3725, 0.239309, 18.5053)
