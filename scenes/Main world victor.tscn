@@ -1133,46 +1133,46 @@ transform = Transform3D(-4.7864e-08, 0, 6.455, 0, 2.04, 0, -1.095, 0, -2.82157e-
 [node name="wall15" parent="Section 6" instance=ExtResource("17_4kubu")]
 transform = Transform3D(-4.7864e-08, 0, 6.73, 0, 2.04, 0, -1.095, 0, -2.94178e-07, -5.3725, 0.239309, 18.5053)
 
-[node name="saw" parent="." instance=ExtResource("35_otxjv")]
+[node name="saw" parent="Section 6" instance=ExtResource("35_otxjv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.06444, 0.657947, 16.383)
 
-[node name="moving_object_path" parent="." node_paths=PackedStringArray("object_to_move") instance=ExtResource("6_222cy")]
+[node name="moving_object_path" parent="Section 6" node_paths=PackedStringArray("object_to_move") instance=ExtResource("6_222cy")]
 curve = SubResource("Curve3D_0x5l0")
 object_to_move = NodePath("../saw")
 movement_speed = 3.0
 ping_pong = true
 
-[node name="saw4" parent="." instance=ExtResource("35_otxjv")]
+[node name="saw4" parent="Section 6" instance=ExtResource("35_otxjv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.54558, 0.690388, 21.1505)
 
-[node name="moving_object_path5" parent="." node_paths=PackedStringArray("object_to_move") instance=ExtResource("6_222cy")]
+[node name="moving_object_path5" parent="Section 6" node_paths=PackedStringArray("object_to_move") instance=ExtResource("6_222cy")]
 curve = SubResource("Curve3D_wvcgo")
 object_to_move = NodePath("../saw8")
 movement_speed = 5.0
 ping_pong = true
 
-[node name="saw6" parent="." instance=ExtResource("35_otxjv")]
+[node name="saw6" parent="Section 6" instance=ExtResource("35_otxjv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.64307, 0.690388, 22.6257)
 
-[node name="moving_object_path7" parent="." node_paths=PackedStringArray("object_to_move") instance=ExtResource("6_222cy")]
+[node name="moving_object_path7" parent="Section 6" node_paths=PackedStringArray("object_to_move") instance=ExtResource("6_222cy")]
 curve = SubResource("Curve3D_3nknx")
 object_to_move = NodePath("../saw6")
 movement_speed = 3.0
 ping_pong = true
 
-[node name="saw7" parent="." instance=ExtResource("35_otxjv")]
+[node name="saw7" parent="Section 6" instance=ExtResource("35_otxjv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.64307, 0.690388, 25.4247)
 
-[node name="moving_object_path8" parent="." node_paths=PackedStringArray("object_to_move") instance=ExtResource("6_222cy")]
+[node name="moving_object_path8" parent="Section 6" node_paths=PackedStringArray("object_to_move") instance=ExtResource("6_222cy")]
 curve = SubResource("Curve3D_i6k8i")
 object_to_move = NodePath("../saw7")
 movement_speed = 4.0
 ping_pong = true
 
-[node name="saw8" parent="." instance=ExtResource("35_otxjv")]
+[node name="saw8" parent="Section 6" instance=ExtResource("35_otxjv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.64307, 0.690388, 17.6911)
 
-[node name="moving_object_path4" parent="." node_paths=PackedStringArray("object_to_move") instance=ExtResource("6_222cy")]
+[node name="moving_object_path4" parent="Section 6" node_paths=PackedStringArray("object_to_move") instance=ExtResource("6_222cy")]
 curve = SubResource("Curve3D_3pqn1")
 object_to_move = NodePath("../saw4")
 movement_speed = 5.0
