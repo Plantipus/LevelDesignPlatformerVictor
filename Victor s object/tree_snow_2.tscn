@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dac5phgd8jx8l"]
+
+[ext_resource type="PackedScene" uid="uid://d0f5xfyn1x1a1" path="res://models/props/tree-snow.glb" id="1_lkvgo"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_41cq1"]
+size = Vector3(0.873108, 1.89381, 0.910767)
+
+[node name="tree-snow2" instance=ExtResource("1_lkvgo")]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="tree-snow" index="15"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="tree-snow/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0116272, 0.952217, -0.00994873)
+shape = SubResource("BoxShape3D_41cq1")

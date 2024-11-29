@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=3 uid="uid://0q4gtwr4p2u5"]
+
+[ext_resource type="PackedScene" uid="uid://ca3x0hnr25xhm" path="res://models/props/fence-straight.glb" id="1_k2gkg"]
+
+[node name="fence-straight2" instance=ExtResource("1_k2gkg")]
