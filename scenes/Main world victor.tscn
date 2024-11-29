@@ -1347,11 +1347,8 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18.316
 [node name="block-snow-edge6" parent="Section 2" instance=ExtResource("28_l2qes")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 18.0911, 2.3049, -8.86202)
 
-[node name="block-snow-edge7" parent="Section 2" instance=ExtResource("28_l2qes")]
-transform = Transform3D(1.385, 0, 0, 0, 1.385, 0, 0, 0, 1.385, 13.06, 3.00966, -7.23923)
-
 [node name="block-snow-edge8" parent="Section 2" instance=ExtResource("28_l2qes")]
-transform = Transform3D(1.385, 0, 0, 0, 1.385, 0, 0, 0, 1.385, 11.0964, 2.74411, -7.23923)
+transform = Transform3D(-0.233711, 0, -1.38178, 0, 2.76, 0, 3.42203, 0, -0.0943702, 4.32525, 2.42106, -30.7889)
 
 [node name="block-snow-edge9" parent="Section 2" instance=ExtResource("28_l2qes")]
 transform = Transform3D(0.981704, -0.190415, 0, 0.190415, 0.981704, 0, 0, 0, 1, 14.9977, 1.30011, -7.40942)
@@ -1375,7 +1372,7 @@ transform = Transform3D(2.0745, 0.0060157, -1.50513, -0.00382819, 5.11099, -0.00
 transform = Transform3D(-0.000917969, -0.000159987, -1.45, -0.00216577, 2.891, -7.88711e-05, 1.45, 0.00431801, -0.000918088, 10.8933, 6.60746, -7.96253)
 
 [node name="block-snow-edge13" parent="Section 2" instance=ExtResource("28_l2qes")]
-transform = Transform3D(-0.000917969, -0.000159987, -1.45, -0.00216577, 2.891, -7.88711e-05, 1.45, 0.00431801, -0.000918088, 14.0827, 6.60746, -7.24576)
+transform = Transform3D(-0.00378108, -1.60042, -1.20754, -0.0051136, 2.4076, -0.802687, 1.44999, 0.00431742, -0.00597963, 7.39435, 5.9773, -31.2493)
 
 [node name="block-snow-edge14" parent="Section 2" instance=ExtResource("28_l2qes")]
 transform = Transform3D(-6.36027e-08, 2.52518e-07, 1.45, 0.00253073, -2.891, 1.26763e-07, 1.45, 0.00504574, 6.33815e-08, 14.208, 9.0635, -7.24576)
@@ -1387,37 +1384,46 @@ transform = Transform3D(1, 0, 0, 0, 2.045, 0, 0, 0, 0.915, 9.3937, -1.22274, -10
 transform = Transform3D(0.778, 0, 0, 0, -1.59, 6.21576e-08, 0, -1.39002e-07, -0.711, 10.4881, 6.59993, -12.6247)
 
 [node name="block-snow-large-slope-narrow2" parent="Section 2" instance=ExtResource("30_13yjl")]
-transform = Transform3D(-0.56048, 0, -0.828168, 0, 1, 0, 0.828168, 0, -0.56048, 9.66017, 2.86214, -14.9499)
+transform = Transform3D(2.02232, 0, 1.106, 0, 2.305, 0, -1.106, 0, 2.02232, 9.2726, -2.30352, -21.1873)
 
 [node name="block-snow-long2" parent="Section 2" instance=ExtResource("31_m70yr")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.3458, 1.30834, -7.62333)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.2335, 3.2806, -33.9461)
 
 [node name="block-snow-long3" parent="Section 2" instance=ExtResource("31_m70yr")]
-transform = Transform3D(1.385, 0, 0, 0, 1.385, 0, 0, 0, 1.385, 15.5651, 3.52744, -7.20061)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.2335, 3.2806, -34.7435)
+
+[node name="block-snow-long6" parent="Section 2" instance=ExtResource("31_m70yr")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.2335, 2.49666, -35.6232)
 
 [node name="block-snow-long4" parent="Section 2" instance=ExtResource("31_m70yr")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.0272, 6.50889, -7.62333)
+transform = Transform3D(0.477757, 0, -0.878492, 0, 1, 0, 0.878492, 0, 0.477757, 6.5543, 6.42235, -27.752)
 
 [node name="block-snow-long5" parent="Section 2" instance=ExtResource("31_m70yr")]
-transform = Transform3D(0.989351, 0, -0.820005, 0, 0.62, 0, 0.820005, 0, 0.989351, 17.6305, 4.76572, -8.04379)
+transform = Transform3D(-1.11395, 0, -0.640576, 0, 0.62, 0, 0.640576, 0, -1.11395, 5.44412, 3.64276, -27.3428)
 
 [node name="block-snow-low-large5" parent="Section 2" instance=ExtResource("25_gf3jw")]
 transform = Transform3D(0.999104, 0, -0.042329, 0, 1, 0, 0.042329, 0, 0.999104, 6.94053, 3.13755, -25.7452)
 
+[node name="block-snow-low-large12" parent="Section 2" instance=ExtResource("25_gf3jw")]
+transform = Transform3D(0.999104, 0, -0.042329, 0, 1, 0, 0.042329, 0, 0.999104, 7.48705, -1.08487, -25.0959)
+
+[node name="block-snow-low-large13" parent="Section 2" instance=ExtResource("25_gf3jw")]
+transform = Transform3D(0.999104, 0, -0.042329, 0, 1, 0, 0.042329, 0, 0.999104, 9.04606, -0.159519, -25.0959)
+
 [node name="block-snow-low-long2" parent="Section 2" instance=ExtResource("32_w6xwf")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.27526, 2.49169, -12.8625)
+transform = Transform3D(0.842706, 0, 0.538374, 0, 1, 0, -0.538374, 0, 0.842706, 4.50341, 1.48235, -28.4069)
 
 [node name="block-snow-low-long3" parent="Section 2" instance=ExtResource("32_w6xwf")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.05099, 2.49169, -10.8975)
+transform = Transform3D(-0.0681373, 0, -0.997676, 0, 1, 0, 0.997676, 0, -0.0681373, 8.73997, 2.40515, -35.6597)
 
 [node name="block-snow-low-long4" parent="Section 2" instance=ExtResource("32_w6xwf")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.05099, 2.862, -9.56134)
+transform = Transform3D(-2.64849, 0, 0.156511, 0, 1, 0, -0.0893865, 0, -4.63736, 9.78915, 4.2307, -34.144)
 
 [node name="block-snow-low-long7" parent="Section 2" instance=ExtResource("32_w6xwf")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.62101, 7.77825, -10.7408)
 
 [node name="block-snow-low-long5" parent="Section 2" instance=ExtResource("32_w6xwf")]
-transform = Transform3D(0.70707, 0, 0.707144, 0, 1, 0, -0.707144, 0, 0.70707, 9.68451, 2.862, -8.01632)
+transform = Transform3D(1.82698, 0, 0.846825, 0, 1, 0, -2.90884, 0, 0.531872, 5.87572, 4.22839, -33.7738)
 
 [node name="block-snow-low-narrow3" parent="Section 2" instance=ExtResource("34_o21so")]
 transform = Transform3D(0.999104, 0, -0.042329, 0, 1.105, 0, 0.042329, 0, 0.999104, 9.07648, 2.46343, -25.5875)
