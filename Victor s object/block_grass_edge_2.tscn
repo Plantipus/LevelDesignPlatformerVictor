@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://chhlniddfw1fn"]
+[gd_scene load_steps=6 format=3 uid="uid://chhlniddfw1fn"]
 
 [ext_resource type="PackedScene" uid="uid://dbylqw3i7tx0i" path="res://models/props/block-grass-edge.glb" id="1_rdtg4"]
 [ext_resource type="Texture2D" uid="uid://72ldk18ropuj" path="res://models/props/Textures/colormap.png" id="2_ivkdl"]
+[ext_resource type="PackedScene" uid="uid://vj50afnwj5rx" path="res://objects/desert_plant.tscn" id="3_rik1y"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3a3mu"]
 albedo_texture = ExtResource("2_ivkdl")
@@ -19,3 +20,63 @@ surface_material_override/0 = SubResource("StandardMaterial3D_3a3mu")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="block-grass-edge/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_4kt07")
+
+[node name="desert plant" parent="." index="1" instance=ExtResource("3_rik1y")]
+transform = Transform3D(0.29, 0, 0, 0, 0.29, 0, 0, 0, 0.29, 0.313615, 1, 0.351886)
+
+[node name="desert plant2" parent="." index="2" instance=ExtResource("3_rik1y")]
+transform = Transform3D(0.29, 0, 0, 0, 0.29, 0, 0, 0, 0.29, 0.313615, 1, 0.215687)
+
+[node name="desert plant3" parent="." index="3" instance=ExtResource("3_rik1y")]
+transform = Transform3D(0.29, 0, 0, 0, 0.29, 0, 0, 0, 0.29, 0.367282, 1, 0.31383)
+
+[node name="desert plant4" parent="." index="4" instance=ExtResource("3_rik1y")]
+transform = Transform3D(0.29, 0, 0, 0, 0.29, 0, 0, 0, 0.29, 0.412786, 1, 0.195511)
+
+[node name="desert plant5" parent="." index="5" instance=ExtResource("3_rik1y")]
+transform = Transform3D(0.29, 0, 0, 0, 0.29, 0, 0, 0, 0.29, 0.207437, 1, 0.327978)
+
+[node name="desert plant6" parent="." index="6" instance=ExtResource("3_rik1y")]
+transform = Transform3D(0.29, 0, 0, 0, 0.29, 0, 0, 0, 0.29, 0.193707, 1, 0.436358)
+
+[node name="desert plant7" parent="." index="7" instance=ExtResource("3_rik1y")]
+transform = Transform3D(0.29, 0, 0, 0, 0.29, 0, 0, 0, 0.29, 0.379888, 1, -0.369662)
+
+[node name="desert plant8" parent="." index="8" instance=ExtResource("3_rik1y")]
+transform = Transform3D(0.29, 0, 0, 0, 0.29, 0, 0, 0, 0.29, -0.405222, 1, -0.280034)
+
+[node name="desert plant9" parent="." index="9" instance=ExtResource("3_rik1y")]
+transform = Transform3D(0.29, 0, 0, 0, 0.29, 0, 0, 0, 0.29, -0.298406, 1, -0.287946)
+
+[node name="desert plant10" parent="." index="10" instance=ExtResource("3_rik1y")]
+transform = Transform3D(0.29, 0, 0, 0, 0.29, 0, 0, 0, 0.29, -0.355913, 1, -0.347234)
+
+[node name="desert plant11" parent="." index="11" instance=ExtResource("3_rik1y")]
+transform = Transform3D(0.29, 0, 0, 0, 0.29, 0, 0, 0, 0.29, -0.426643, 1, 0.275636)
+
+[node name="desert plant12" parent="." index="12" instance=ExtResource("3_rik1y")]
+transform = Transform3D(0.29, 0, 0, 0, 0.29, 0, 0, 0, 0.29, -0.345901, 1, 0.284155)
+
+[node name="desert plant13" parent="." index="13" instance=ExtResource("3_rik1y")]
+transform = Transform3D(0.29, 0, 0, 0, 0.29, 0, 0, 0, 0.29, -0.400808, 1, 0.347701)
+
+[node name="desert plant14" parent="." index="14" instance=ExtResource("3_rik1y")]
+transform = Transform3D(0.29, 0, 0, 0, 0.29, 0, 0, 0, 0.29, -0.323185, 1, 0.342769)
+
+[node name="desert plant15" parent="." index="15" instance=ExtResource("3_rik1y")]
+transform = Transform3D(0.29, 0, 0, 0, 0.29, 0, 0, 0, 0.29, -0.381375, 1, 0.243915)
+
+[node name="desert plant16" parent="." index="16" instance=ExtResource("3_rik1y")]
+transform = Transform3D(0.29, 0, 0, 0, 0.29, 0, 0, 0, 0.29, -0.348966, 1, 0.406508)
+
+[node name="desert plant17" parent="." index="17" instance=ExtResource("3_rik1y")]
+transform = Transform3D(0.29, 0, 0, 0, 0.29, 0, 0, 0, 0.29, -0.272572, 1, 0.425151)
+
+[node name="desert plant18" parent="." index="18" instance=ExtResource("3_rik1y")]
+transform = Transform3D(0.29, 0, 0, 0, 0.29, 0, 0, 0, 0.29, -0.303359, 1, -0.386141)
+
+[node name="desert plant19" parent="." index="19" instance=ExtResource("3_rik1y")]
+transform = Transform3D(0.29, 0, 0, 0, 0.29, 0, 0, 0, 0.29, 0.318542, 1, -0.390649)
+
+[node name="desert plant20" parent="." index="20" instance=ExtResource("3_rik1y")]
+transform = Transform3D(0.29, 0, 0, 0, 0.29, 0, 0, 0, 0.29, 0.318542, 1, -0.390649)

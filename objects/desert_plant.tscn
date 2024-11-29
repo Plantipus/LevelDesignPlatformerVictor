@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://vj50afnwj5rx"]
+
+[ext_resource type="PackedScene" uid="uid://ctfjj2573fbex" path="res://models/props/plant.glb" id="1_uaa78"]
+[ext_resource type="Texture2D" uid="uid://0odt7cvj574e" path="res://models/core_models/Textures/colormap.png" id="2_d7a45"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rr126"]
+albedo_texture = ExtResource("2_d7a45")
+uv1_scale = Vector3(1.03, 0.98, 1.14)
+uv1_offset = Vector3(2.895, 0, 0)
+
+[node name="desert plant" instance=ExtResource("1_uaa78")]
+
+[node name="plant" parent="." index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_rr126")
