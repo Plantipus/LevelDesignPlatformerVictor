@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://cnewd51uwoq13"]
+
+[ext_resource type="PackedScene" uid="uid://c7vove886ept4" path="res://models/props/block-grass-overhang-edge.glb" id="1_jpa36"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qdv6v"]
+albedo_color = Color(0.384314, 1, 1, 1)
+metallic = 0.3
+metallic_specular = 0.74
+emission_enabled = true
+emission = Color(0, 0, 0.239216, 1)
+emission_energy_multiplier = 6.22
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_v1fgb"]
+size = Vector3(1.10699, 0.934143, 1.04227)
+
+[node name="water" instance=ExtResource("1_jpa36")]
+
+[node name="block-grass-overhang-edge" parent="." index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_qdv6v")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="block-grass-overhang-edge" index="0"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="block-grass-overhang-edge/StaticBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0113831, 0.454926, 0.000473022)
+shape = SubResource("BoxShape3D_v1fgb")
