@@ -1,4 +1,4 @@
-[gd_scene load_steps=72 format=3 uid="uid://dmtd4jk4ugt8c"]
+[gd_scene load_steps=67 format=3 uid="uid://dmtd4jk4ugt8c"]
 
 [ext_resource type="Environment" uid="uid://bqnqgflivjvue" path="res://scenes/main-environment.tres" id="1_oygcb"]
 [ext_resource type="PackedScene" uid="uid://dl2ed4gkybggf" path="res://objects/player.tscn" id="2_qbbhe"]
@@ -42,9 +42,9 @@
 [ext_resource type="PackedScene" uid="uid://chhlniddfw1fn" path="res://Victor s object/block_grass_edge_2.tscn" id="33_8nlb0"]
 [ext_resource type="PackedScene" uid="uid://brujyjx2qqg4y" path="res://Victor s object/platform_moving.tscn" id="34_lvoc1"]
 [ext_resource type="PackedScene" uid="uid://bxkhp8qe1gg62" path="res://Victor s object/block_snow_low_narrow_2.tscn" id="34_o21so"]
-[ext_resource type="PackedScene" uid="uid://bprrlrsrodjse" path="res://objects/saw.tscn" id="35_otxjv"]
 [ext_resource type="PackedScene" uid="uid://v5smarwfj8q3" path="res://Victor s object/hedge_corner_2.tscn" id="36_menye"]
 [ext_resource type="PackedScene" uid="uid://ceojd3peoovj2" path="res://Victor s object/block_snow_large_tall_2.tscn" id="37_q7ho8"]
+[ext_resource type="PackedScene" uid="uid://cxijgrdpu0fkp" path="res://Victor s object/Half snow half  grass tree.tscn" id="40_0lo3j"]
 [ext_resource type="PackedScene" uid="uid://dtx06f4ekfgqc" path="res://Victor s object/snowy mountain.tscn" id="42_sncs5"]
 [ext_resource type="PackedScene" uid="uid://ctmsvh7l1enuh" path="res://Victor s object/ice_grass.tscn" id="43_hsnc6"]
 [ext_resource type="PackedScene" uid="uid://bw7nsi1v8g30s" path="res://models/props/poles.glb" id="43_quy6b"]
@@ -94,41 +94,6 @@ _data = {
 "tilts": PackedFloat32Array(0, 0, 0)
 }
 point_count = 3
-
-[sub_resource type="Curve3D" id="Curve3D_0x5l0"]
-_data = {
-"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -4.06444, 0.61463, 16.383, 0, 0, 0, 0, 0, 0, 2.475, 0.615, 16.383),
-"tilts": PackedFloat32Array(0, 0)
-}
-point_count = 2
-
-[sub_resource type="Curve3D" id="Curve3D_wvcgo"]
-_data = {
-"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -3.76441, 0.69, 17.691, 0, 0, 0, 0, 0, 0, 1.93011, 0.69, 17.691),
-"tilts": PackedFloat32Array(0, 0)
-}
-point_count = 2
-
-[sub_resource type="Curve3D" id="Curve3D_3nknx"]
-_data = {
-"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -4, 0.69, 22.626, 0, 0, 0, 0, 0, 0, 2, 0.69, 22.626),
-"tilts": PackedFloat32Array(0, 0)
-}
-point_count = 2
-
-[sub_resource type="Curve3D" id="Curve3D_i6k8i"]
-_data = {
-"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -4.338, 0.69, 25.425, 0, 0, 0, 0, 0, 0, 2.777, 0.69, 25.425),
-"tilts": PackedFloat32Array(0, 0)
-}
-point_count = 2
-
-[sub_resource type="Curve3D" id="Curve3D_3pqn1"]
-_data = {
-"points": PackedVector3Array(0, 0, 0, 0, 0, 0, 2, 0.69, 21.549, 0, 0, 0, 0, 0, 0, -4, 0.69, 21.549),
-"tilts": PackedFloat32Array(0, 0)
-}
-point_count = 2
 
 [sub_resource type="Curve3D" id="Curve3D_5n82a"]
 _data = {
@@ -369,6 +334,24 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.7336, 2.2842, 7.62596)
 
 [node name="coin30" parent="Start room" instance=ExtResource("16_3y1id")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.30937, 0.711913, 7.44501)
+
+[node name="coin31" parent="Start room" instance=ExtResource("16_3y1id")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.24815, 10.0926, -1.74925)
+
+[node name="coin32" parent="Start room" instance=ExtResource("16_3y1id")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.1674, 9.47903, -18.9136)
+
+[node name="coin33" parent="Start room" instance=ExtResource("16_3y1id")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.8846, 9.25365, -18.9136)
+
+[node name="coin34" parent="Start room" instance=ExtResource("16_3y1id")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.3405, 9.25365, -11.2429)
+
+[node name="coin35" parent="Start room" instance=ExtResource("16_3y1id")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.1551, 9.25365, -11.2429)
+
+[node name="coin36" parent="Start room" instance=ExtResource("16_3y1id")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.1551, 9.25365, -11.2429)
 
 [node name="coin23" parent="Start room" instance=ExtResource("16_3y1id")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.9922, -8.01312, 7.86769)
@@ -1616,56 +1599,6 @@ transform = Transform3D(0.707107, 0, -0.707107, 0, 1, 0, 0.707107, 0, 0.707107, 
 [node name="checkpoint2" parent="Start room" instance=ExtResource("12_3wsk8")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.671882, 0.714723, 13.2333)
 
-[node name="saw" parent="Start room" instance=ExtResource("35_otxjv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.06444, 0.657947, 16.383)
-
-[node name="moving_object_path" parent="Start room" node_paths=PackedStringArray("object_to_move") instance=ExtResource("6_222cy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0733299, 0.0662766, -0.117851)
-curve = SubResource("Curve3D_0x5l0")
-object_to_move = NodePath("../saw")
-movement_speed = 3.0
-ping_pong = true
-
-[node name="saw4" parent="Start room" instance=ExtResource("35_otxjv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.54558, 0.690388, 21.5489)
-
-[node name="moving_object_path5" parent="Start room" node_paths=PackedStringArray("object_to_move") instance=ExtResource("6_222cy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0733299, 0.0662766, -0.117851)
-curve = SubResource("Curve3D_wvcgo")
-object_to_move = NodePath("../saw8")
-movement_speed = 5.0
-ping_pong = true
-
-[node name="saw6" parent="Start room" instance=ExtResource("35_otxjv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.64307, 0.690388, 22.6257)
-
-[node name="moving_object_path7" parent="Start room" node_paths=PackedStringArray("object_to_move") instance=ExtResource("6_222cy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0733299, 0.0662766, -0.117851)
-curve = SubResource("Curve3D_3nknx")
-object_to_move = NodePath("../saw6")
-movement_speed = 3.0
-ping_pong = true
-
-[node name="saw7" parent="Start room" instance=ExtResource("35_otxjv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.64307, 0.690388, 25.4247)
-
-[node name="moving_object_path8" parent="Start room" node_paths=PackedStringArray("object_to_move") instance=ExtResource("6_222cy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0733299, 0.0662766, -0.117851)
-curve = SubResource("Curve3D_i6k8i")
-object_to_move = NodePath("../saw7")
-movement_speed = 4.0
-ping_pong = true
-
-[node name="saw8" parent="Start room" instance=ExtResource("35_otxjv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.64307, 0.690388, 17.6911)
-
-[node name="moving_object_path6" parent="Start room" node_paths=PackedStringArray("object_to_move") instance=ExtResource("6_222cy")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0733299, 0.0662766, -0.117851)
-curve = SubResource("Curve3D_3pqn1")
-object_to_move = NodePath("../saw4")
-movement_speed = 5.0
-ping_pong = true
-
 [node name="hedge2" parent="Start room" instance=ExtResource("50_5tx1q")]
 transform = Transform3D(4.77, 0, 0, 0, 4.77, 0, 0, 0, 3.125, 1.10295, 0.61463, 14.5768)
 
@@ -1962,6 +1895,12 @@ transform = Transform3D(0.935506, 0, -0.353312, 0, 1, 0, 0.353312, 0, 0.935506, 
 
 [node name="mushrooms3" parent="Start room" instance=ExtResource("21_ybkrw")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.01337, 0.61463, 10.6756)
+
+[node name="tree-pine-small2" parent="Start room" instance=ExtResource("40_0lo3j")]
+transform = Transform3D(2.14807, 0, 2.55761, 0, 3.34, 0, -2.55761, 0, 2.14807, -10.4442, 8.35258, -8.29717)
+
+[node name="tree-pine-small3" parent="Start room" instance=ExtResource("40_0lo3j")]
+transform = Transform3D(2.14807, 0, 2.55761, 0, 3.34, 0, -2.55761, 0, 2.14807, -6.31123, 8.35258, -8.2976)
 
 [node name="Grass section" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0733299, -0.0662766, 0.117851)
@@ -2326,6 +2265,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.9437, 4.14631, -14.7788)
 [node name="coin32" parent="Snow section" instance=ExtResource("16_3y1id")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.6452, 4.9694, -11.6683)
 
+[node name="coin34" parent="Snow section" instance=ExtResource("16_3y1id")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.6936, 8.18993, -12.3058)
+
+[node name="coin35" parent="Snow section" instance=ExtResource("16_3y1id")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.1029, 9.29371, -14.3588)
+
 [node name="coin33" parent="Snow section" instance=ExtResource("16_3y1id")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.9331, 6.43165, -13.8334)
 
@@ -2344,6 +2289,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.8911, 6.89718, -19.4076)
 [node name="coin12" parent="Snow section" instance=ExtResource("16_3y1id")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 29.7615, 4.87911, -20.6753)
 
+[node name="coin21" parent="Snow section" instance=ExtResource("16_3y1id")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 33.9447, 0.58776, -24.3216)
+
 [node name="coin16" parent="Snow section" instance=ExtResource("16_3y1id")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 31.0087, 4.5298, -18.4822)
 
@@ -2358,6 +2306,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.4784, 12.1446, -14.1178)
 
 [node name="coin20" parent="Snow section" instance=ExtResource("16_3y1id")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.0179, 10.7117, -17.3251)
+
+[node name="coin22" parent="Snow section" instance=ExtResource("16_3y1id")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.2661, 10.9899, -20.7224)
 
 [node name="platform-moving" parent="Snow section" instance=ExtResource("34_lvoc1")]
 transform = Transform3D(0.715, 0, 0, 0, 0.715, 0, 0, 0, 0.715, 20.2629, 10.6077, -10.3869)
@@ -2565,7 +2516,13 @@ transform = Transform3D(-0.539768, 0, -1.60148, 0, 1.69, 0, 1.60148, 0, -0.53976
 transform = Transform3D(-0.863948, 0, -2.56332, 0, 2.705, 0, 2.56332, 0, -0.863948, 19.5952, 10.1177, -19.9663)
 
 [node name="tree-pine-snow21" parent="Snow section" instance=ExtResource("54_wprgl")]
-transform = Transform3D(-0.710641, 0, -2.10846, 0, 2.225, 0, 2.10846, 0, -0.710641, -5.72522, 8.71091, -8.38675)
+transform = Transform3D(-0.710641, 0, -2.10846, 0, 2.225, 0, 2.10846, 0, -0.710641, -5.72522, 8.71091, -14.2218)
+
+[node name="tree-pine-snow22" parent="Snow section" instance=ExtResource("54_wprgl")]
+transform = Transform3D(-0.710641, 0, -2.10846, 0, 2.225, 0, 2.10846, 0, -0.710641, -11.3979, 8.71091, -9.70805)
+
+[node name="tree-pine-snow23" parent="Snow section" instance=ExtResource("54_wprgl")]
+transform = Transform3D(-0.908663, 0, -2.69599, 0, 2.845, 0, 2.69599, 0, -0.908663, -11.3979, 8.71091, -14.0898)
 
 [node name="tree-pine-snow15" parent="Snow section" instance=ExtResource("54_wprgl")]
 transform = Transform3D(-0.863948, 0, -2.56332, 0, 2.705, 0, 2.56332, 0, -0.863948, 10.7692, -0.747101, -9.83123)
@@ -3154,10 +3111,31 @@ transform = Transform3D(-0.849535, 0.0288487, -0.526746, 0.0623962, 0.996989, -0
 transform = Transform3D(0.936158, 0.0288487, -0.350394, -0.00170908, 0.996989, 0.0775181, 0.351576, -0.0719703, 0.93339, 5.12585, -3.68395, 11.1759)
 
 [node name="block-grass-edge58" parent="Desert section/block-grass-edge2" instance=ExtResource("33_8nlb0")]
-transform = Transform3D(-0.837242, 0, 0.546833, 0, 1, 0, -0.546833, 0, -0.837242, 8.61705, -2.21078, 8.66115)
+transform = Transform3D(0.344299, 0, 0.93886, 0, 1, 0, -0.93886, 0, 0.344299, 12.0225, -2.21078, 7.79501)
 
 [node name="block-grass-edge59" parent="Desert section/block-grass-edge2" instance=ExtResource("33_8nlb0")]
-transform = Transform3D(-0.453975, 0, 0.891014, 0, 1, 0, -0.891014, 0, -0.453975, 8.21407, -2.50228, 8.09723)
+transform = Transform3D(0.765932, 0, 0.642922, 0, 1, 0, -0.642922, 0, 0.765932, 12.4812, -2.50228, 7.27541)
+
+[node name="block-grass-edge99" parent="Desert section/block-grass-edge2" instance=ExtResource("33_8nlb0")]
+transform = Transform3D(0.386582, 0, 0.922255, 0, 1, 0, -0.922255, 0, 0.386582, 12.9873, -2.8414, 6.62302)
+
+[node name="block-grass-edge101" parent="Desert section/block-grass-edge2" instance=ExtResource("33_8nlb0")]
+transform = Transform3D(0.0309917, 0, 0.99952, 0, 1, 0, -0.99952, 0, 0.0309917, 13.1243, -3.33387, 6.21859)
+
+[node name="block-grass-edge102" parent="Desert section/block-grass-edge2" instance=ExtResource("33_8nlb0")]
+transform = Transform3D(-0.306094, 0, 0.952002, 0, 1, 0, -0.952002, 0, -0.306094, 13.0703, -3.71551, 5.56003)
+
+[node name="block-grass-edge103" parent="Desert section/block-grass-edge2" instance=ExtResource("33_8nlb0")]
+transform = Transform3D(0.208372, 0, 0.97805, 0, 1, 0, -0.97805, 0, 0.208372, 12.8722, -4.00701, 4.8515)
+
+[node name="block-grass-edge104" parent="Desert section/block-grass-edge2" instance=ExtResource("33_8nlb0")]
+transform = Transform3D(-0.262543, 0, 0.96492, 0, 1, 0, -0.96492, 0, -0.262543, 12.5895, -4.34613, 4.33172)
+
+[node name="block-grass-edge105" parent="Desert section/block-grass-edge2" instance=ExtResource("33_8nlb0")]
+transform = Transform3D(-0.590423, 0, 0.807094, 0, 1, 0, -0.807094, 0, -0.590423, 11.9995, -4.8386, 3.85963)
+
+[node name="block-grass-edge106" parent="Desert section/block-grass-edge2" instance=ExtResource("33_8nlb0")]
+transform = Transform3D(-1.82441, 0, 2.49392, 0, 3.09, 0, -2.49392, 0, -1.82441, 10.516, -7.39086, 5.08226)
 
 [node name="block-grass-edge60" parent="Desert section/block-grass-edge2" instance=ExtResource("33_8nlb0")]
 transform = Transform3D(0.676266, -0.0765924, 0.732666, 0.0430536, 0.996989, 0.0644853, -0.735399, -0.0120653, 0.677527, 6.97753, -2.31809, 7.39093)
@@ -3561,6 +3539,66 @@ transform = Transform3D(0.810246, 0, -0.58609, 0, 1, 0, 0.58609, 0, 0.810246, -2
 
 [node name="plant36" parent="Desert section" instance=ExtResource("20_i3kpg")]
 transform = Transform3D(0.810246, 0, -0.58609, 0, 1, 0, 0.58609, 0, 0.810246, -29.1246, -9.7037, 0.26888)
+
+[node name="coin22" parent="Desert section" instance=ExtResource("16_3y1id")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.0392, 4.18467, 4.75159)
+
+[node name="coin23" parent="Desert section" instance=ExtResource("16_3y1id")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.9715, 3.46365, 4.04902)
+
+[node name="coin24" parent="Desert section" instance=ExtResource("16_3y1id")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.5753, 2.48909, 2.42861)
+
+[node name="coin25" parent="Desert section" instance=ExtResource("16_3y1id")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -32.0846, 1.73229, 0.430032)
+
+[node name="coin26" parent="Desert section" instance=ExtResource("16_3y1id")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -28.2084, -6.20785, 12.99)
+
+[node name="coin27" parent="Desert section" instance=ExtResource("16_3y1id")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.7801, -6.20785, 11.0885)
+
+[node name="coin28" parent="Desert section" instance=ExtResource("16_3y1id")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.3876, -6.20785, 13.8944)
+
+[node name="coin29" parent="Desert section" instance=ExtResource("16_3y1id")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.0998, -4.52639, 10.3881)
+
+[node name="coin30" parent="Desert section" instance=ExtResource("16_3y1id")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.934, -1.37809, 17.8246)
+
+[node name="coin31" parent="Desert section" instance=ExtResource("16_3y1id")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.7514, -12.0149, 31.7174)
+
+[node name="coin32" parent="Desert section" instance=ExtResource("16_3y1id")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.9511, -12.9016, 28.4297)
+
+[node name="coin33" parent="Desert section" instance=ExtResource("16_3y1id")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.6713, -6.27277, 11.4488)
+
+[node name="coin34" parent="Desert section" instance=ExtResource("16_3y1id")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.3423, -8.41808, 8.14862)
+
+[node name="coin35" parent="Desert section" instance=ExtResource("16_3y1id")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.171, -16.4012, 8.57172)
+
+[node name="coin36" parent="Desert section" instance=ExtResource("16_3y1id")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.4697, -16.4012, 6.89229)
+
+[node name="coin37" parent="Desert section" instance=ExtResource("16_3y1id")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.2358, -16.4012, 5.24671)
+
+[node name="coin38" parent="Desert section" instance=ExtResource("16_3y1id")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41.1047, -12.5834, -7.79601)
+
+[node name="coin39" parent="Desert section" instance=ExtResource("16_3y1id")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48.0216, -12.6066, -0.00723004)
+
+[node name="coin40" parent="Desert section" instance=ExtResource("16_3y1id")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -45.5929, -12.6066, 5.30883)
+
+[node name="coin41" parent="Desert section" instance=ExtResource("16_3y1id")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -54.0701, -12.648, -5.50158)
 
 [connection signal="coin_collected" from="Player" to="HUD" method="_on_coin_collected"]
 [connection signal="reached_goal" from="Player" to="HUD" method="_on_player_reached_goal"]
