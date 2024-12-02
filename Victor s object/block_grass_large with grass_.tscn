@@ -21,4 +21,4 @@ surface_material_override/0 = SubResource("StandardMaterial3D_eq81i")
 shape = SubResource("ConcavePolygonShape3D_chwy3")
 
 [node name="grass2" parent="." index="1" instance=ExtResource("3_llk83")]
-transform = Transform3D(0.696335, 0, 0, 0, 0.696335, 0, 0, 0, 0.696335, -7.56926, 0.0998992, -4.75502)
+transform = Transform3D(0.696335, 0, 0, 0, 0.696335, 0, 0, 0, 0.696335, -7.56926, 0.132844, -4.75502)

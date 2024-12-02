@@ -152,7 +152,7 @@ environment = ExtResource("1_oygcb")
 camera_attributes = SubResource("CameraAttributesPractical_u8ojw")
 
 [node name="Player" parent="." node_paths=PackedStringArray("view") instance=ExtResource("2_qbbhe")]
-transform = Transform3D(-0.436802, 0, -0.899558, 0, 1, 0, 0.899558, 0, -0.436802, -31.9323, 1.29598, 17.0435)
+transform = Transform3D(-0.436802, 0, -0.899558, 0, 1, 0, 0.899558, 0, -0.436802, 0.648988, 1.29598, 8.51818)
 view = NodePath("../View")
 
 [node name="View" type="Node3D" parent="." node_paths=PackedStringArray("target") groups=["View"]]
@@ -1026,6 +1026,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.5902, 5.07209, 11.0039)
 
 [node name="block-grass-large7" parent="Start room" instance=ExtResource("25_siea0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.3422, 5.6871, 3.47225)
+
+[node name="Fire pite" parent="Start room" instance=ExtResource("44_ck3t5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.500279, 0.747581, 7.32983)
 
 [node name="Section 1" type="Node3D" parent="."]
 
@@ -2336,9 +2339,6 @@ transform = Transform3D(-2.09238, 0, -0.629416, 0, 2.185, 0, 0.629416, 0, -2.092
 
 [node name="Ice grass43" parent="Section 2/Ice grass" instance=ExtResource("44_ck3t5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18.1623, 10.8296, -17.4173)
-
-[node name="Ice grass44" parent="Section 2/Ice grass" instance=ExtResource("44_ck3t5")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.500279, 0.762582, 7.32983)
 
 [node name="Ice grass46" parent="Section 2/Ice grass" instance=ExtResource("44_ck3t5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.500279, -5.974, 7.32983)

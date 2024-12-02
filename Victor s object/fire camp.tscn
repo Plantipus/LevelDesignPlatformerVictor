@@ -140,3 +140,25 @@ transform = Transform3D(0.347836, 0, 0.457859, 0, 0.575, 0, -0.457859, 0, 0.3478
 
 [node name="rocks10" parent="." index="18" instance=ExtResource("6_lplnq")]
 transform = Transform3D(-0.0133762, 0, 0.574844, 0, 0.575, 0, -0.574844, 0, -0.0133762, -0.0343972, -0.0965962, -0.323681)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="." index="19"]
+transform = Transform3D(1, 0, 0, 0, 0.0147824, -0.999891, 0, 0.999891, 0.0147824, 0, 0, 0)
+light_color = Color(1, 0.345098, 0.121569, 1)
+light_energy = 9.242
+light_indirect_energy = 1.646
+light_volumetric_fog_energy = 1.485
+light_size = 0.216
+spot_range = 1.84459
+spot_attenuation = -1.86
+spot_angle = 19.28
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="." index="20"]
+transform = Transform3D(1, 0, 0, 0, 0.0147824, -0.999891, 0, 0.999891, 0.0147824, 0, 0, 0)
+light_color = Color(1, 0.831373, 0.498039, 1)
+light_energy = 9.242
+light_indirect_energy = 1.646
+light_volumetric_fog_energy = 1.485
+light_size = 0.216
+spot_range = 1.73776
+spot_attenuation = -1.86
+spot_angle = 19.28
