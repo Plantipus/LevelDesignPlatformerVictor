@@ -84,7 +84,7 @@ shadow_offset = Vector2(2, 2)
 
 [sub_resource type="Curve3D" id="Curve3D_5fw0d"]
 _data = {
-"points": PackedVector3Array(0, 0, 0, -2.17169, 0.22877, 0.474637, -1.16382, -420.387, 1.1802, 0, 0, 0, 0, 0, 0, -21.7597, -420.034, 0.731811),
+"points": PackedVector3Array(0, 0, 0, -2.17169, 0.22877, 0.474637, -1.16382, -421.357, 1.1802, 0, 0, 0, 0, 0, 0, -21.7597, -420.034, 0.731811),
 "tilts": PackedFloat32Array(0, 0)
 }
 point_count = 2
@@ -111,8 +111,12 @@ environment = ExtResource("1_oygcb")
 camera_attributes = SubResource("CameraAttributesPractical_u8ojw")
 
 [node name="Player" parent="." node_paths=PackedStringArray("view") instance=ExtResource("2_qbbhe")]
-transform = Transform3D(-0.894201, 0, 0.447666, 0, 1, 0, -0.447666, 0, -0.894201, -1.05868, -418.42, 3.39927)
+transform = Transform3D(-0.894201, 0, 0.447666, 0, 1, 0, -0.447666, 0, -0.894201, -1.05868, -418.42, 8.94989)
 view = NodePath("../View")
+
+[node name="FogVolume" type="FogVolume" parent="Player"]
+transform = Transform3D(500, 0, -7.62939e-05, 0, 4.24, 0, 7.62939e-05, 0, 500, 54.3569, -31.0744, 56.9805)
+size = Vector3(5.01538, 2, 2)
 
 [node name="View" type="Node3D" parent="." node_paths=PackedStringArray("target") groups=["View"]]
 process_mode = 3
@@ -299,6 +303,10 @@ transform = Transform3D(0.63, 0, 0, 0, 0.63, 0, 0, 0, 0.63, -7.67611, -430.266, 
 
 [node name="platform-moving start room" parent="Start room" instance=ExtResource("34_lvoc1")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.395724, -429.509, 13.5625)
+
+[node name="button" parent="Start room/platform-moving start room" node_paths=PackedStringArray("target") instance=ExtResource("9_140rh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.233721, 0.919189, 0.1107)
+target = NodePath("../../moving path secret")
 
 [node name="moving path secret" parent="Start room" node_paths=PackedStringArray("object_to_move") instance=ExtResource("6_222cy")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0733299, 0.0662766, -0.117851)
@@ -1709,10 +1717,6 @@ transform = Transform3D(-3.485, 0, -3.04668e-07, 0, 1.413, 0, 3.04668e-07, 0, -3
 [node name="block-grass-large20" parent="Start room" instance=ExtResource("26_noexb")]
 transform = Transform3D(0.63, 0, 0, 0, 0.63, 0, 0, 0, 0.63, -5.25389, -429.364, 7.85992)
 
-[node name="button" parent="Start room" node_paths=PackedStringArray("target") instance=ExtResource("9_140rh")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.629445, -428.59, 13.6732)
-target = NodePath("../moving path secret")
-
 [node name="tree2" parent="Start room" instance=ExtResource("18_gfitn")]
 transform = Transform3D(1, 0, 0, 0, 1.2, 0, 0, 0, 1, -4.75936, -421.03, 6.03329)
 
@@ -3120,9 +3124,6 @@ transform = Transform3D(3.14938, -2.77247, 3.50781, 3.99916, 3.66549, -0.693437,
 
 [node name="cube17" parent="Desert section" instance=ExtResource("17_gsgcr")]
 transform = Transform3D(6.19003, -41.5046, 27.1855, 49.6066, 5.69118, -2.60641, -0.930786, 27.2943, 41.8827, -76.5406, -517.207, 6.58767)
-
-[node name="cube24" parent="Desert section" instance=ExtResource("17_gsgcr")]
-transform = Transform3D(-3.27835e-06, -1000, 0, 75, -4.37114e-05, 0, 0, 0, 1000, 476.535, -563.104, -11.017)
 
 [node name="cube20" parent="Desert section" instance=ExtResource("17_gsgcr")]
 transform = Transform3D(-5.55524, -47.529, 14.4961, 38.3564, -13.3747, -29.153, 31.5899, 7.88135, 37.9468, 101.249, -471.232, -30.1542)

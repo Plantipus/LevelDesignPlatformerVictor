@@ -34,3 +34,7 @@ fog_density = 0.0
 fog_height = 42.0
 fog_height_density = -11.541
 fog_depth_end = 4000.0
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.0
+volumetric_fog_length = 53.22
+volumetric_fog_detail_spread = 2.04906
