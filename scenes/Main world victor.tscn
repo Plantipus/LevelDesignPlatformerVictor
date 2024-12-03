@@ -5128,6 +5128,9 @@ transform = Transform3D(0.0139334, 1.11966, 1.56582, -0.00996285, 1.56588, -1.11
 [node name="platform48" parent="." instance=ExtResource("46_ga2df")]
 transform = Transform3D(0.0139334, 1.11966, 1.56582, -0.00996285, 1.56588, -1.11961, -1.92492, 0, 0.0171289, 4.20006, -425.391, 10.9526)
 
+[node name="platform57" parent="." instance=ExtResource("46_ga2df")]
+transform = Transform3D(0.0139334, 1.11966, 1.56582, -0.00996285, 1.56588, -1.11961, -1.92492, 0, 0.0171289, 3.20544, -424.936, 11.3127)
+
 [node name="platform49" parent="." instance=ExtResource("46_ga2df")]
 transform = Transform3D(0.0518922, 1.11944, 1.56518, -0.00996285, 1.56588, -1.11961, -1.92427, 0.0220808, 0.0480052, 4.16264, -424.97, 12.532)
 
