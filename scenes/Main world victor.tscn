@@ -311,7 +311,10 @@ transform = Transform3D(0.63, 0, 0, 0, 0.63, 0, 0, 0, 0.63, -9.25266, -428.369, 
 transform = Transform3D(1, 0, 0, 0, 1.2, 0, 0, 0, 1, 2.79969, -421.03, 17.0597)
 
 [node name="tree10" parent="Start room" instance=ExtResource("18_gfitn")]
-transform = Transform3D(1, 0, 0, 0, 1.2, 0, 0, 0, 1, -2.83141, -427.782, 13.1831)
+transform = Transform3D(1, 0, 0, 0, 1.2, 0, 0, 0, 1, -2.83141, -427.782, 12.8047)
+
+[node name="tree18" parent="Start room" instance=ExtResource("18_gfitn")]
+transform = Transform3D(1, 0, 0, 0, 1.2, 0, 0, 0, 1, -2.83141, -427.782, 13.8345)
 
 [node name="tree9" parent="Start room" instance=ExtResource("18_gfitn")]
 transform = Transform3D(1, 0, 0, 0, 1.2, 0, 0, 0, 1, 2.79969, -421.03, 23.6726)
@@ -2492,7 +2495,7 @@ transform = Transform3D(1, 0, 0, 0, 1.2, 0, 0, 0, 1, 2.94852, -421.03, 12.4558)
 transform = Transform3D(1, 0, 0, 0, 1.2, 0, 0, 0, 1, 2.94852, -421.03, 13.7441)
 
 [node name="tree17" parent="Start room" instance=ExtResource("18_gfitn")]
-transform = Transform3D(1, 0, 0, 0, 1.2, 0, 0, 0, 1, -2.76376, -427.716, 12.088)
+transform = Transform3D(1, 0, 0, 0, 1.2, 0, 0, 0, 1, -2.76376, -427.716, 11.8226)
 
 [node name="tree4" parent="Start room" instance=ExtResource("18_gfitn")]
 transform = Transform3D(1, 0, 0, 0, 1.2, 0, 0, 0, 1, 0.502754, -421.03, 3.47388)
@@ -5154,6 +5157,9 @@ transform = Transform3D(0.0518922, 1.11944, 1.56518, -0.00996285, 1.56588, -1.11
 
 [node name="platform56" parent="." instance=ExtResource("46_ga2df")]
 transform = Transform3D(0.0518922, 1.11944, 1.56518, -0.00996285, 1.56588, -1.11961, -1.92427, 0.0220808, 0.0480052, 4.49514, -425.286, 18.067)
+
+[node name="platform58" parent="." instance=ExtResource("46_ga2df")]
+transform = Transform3D(0.0518922, 1.11944, 1.56518, -0.00996285, 1.56588, -1.11961, -1.92427, 0.0220808, 0.0480052, 3.80374, -424.748, 18.067)
 
 [node name="platform32" parent="." instance=ExtResource("46_ga2df")]
 transform = Transform3D(-0.0131085, 0, 1.92495, 0, 1.925, 0, -1.92495, 0, -0.0131085, 2.34559, -428.182, 5.39481)

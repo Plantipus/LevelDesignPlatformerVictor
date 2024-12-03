@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://cnewd51uwoq13"]
+[gd_scene load_steps=5 format=3 uid="uid://cnewd51uwoq13"]
 
 [ext_resource type="PackedScene" uid="uid://c7vove886ept4" path="res://models/props/block-grass-overhang-edge.glb" id="1_jpa36"]
+[ext_resource type="PackedScene" uid="uid://dqe83pil81wbx" path="res://objects/dither_obstacle.tscn" id="2_xdntu"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qdv6v"]
 albedo_color = Color(0.384314, 1, 1, 1)
@@ -23,3 +24,5 @@ surface_material_override/0 = SubResource("StandardMaterial3D_qdv6v")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="block-grass-overhang-edge/StaticBody3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0113831, 0.454926, 0.000473022)
 shape = SubResource("BoxShape3D_v1fgb")
+
+[node name="DitherObstacle" parent="." index="1" instance=ExtResource("2_xdntu")]
