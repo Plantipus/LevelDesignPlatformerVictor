@@ -2846,7 +2846,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.76976, -427.705, 5.93835)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.76976, -427.189, 5.44512)
 
 [node name="Snow particles" parent="Start room" instance=ExtResource("40_vkjdp")]
-transform = Transform3D(5.26, 0, 0, 0, 5.26, 0, 0, 0, 5.26, 20.8874, -417.306, -10.1167)
+transform = Transform3D(9.82, 0, 0, 0, 6.41, 0, 0, 0, 8.185, 20.8874, -424.789, -10.1167)
+
+[node name="Snow particles3" parent="Start room" instance=ExtResource("40_vkjdp")]
+transform = Transform3D(9.82, 0, 0, 0, 6.41, 0, 0, 0, 8.185, 20.8874, -417.389, -10.1167)
 
 [node name="Snow particles2" parent="Start room" instance=ExtResource("40_vkjdp")]
 transform = Transform3D(11.45, 0, 0, 0, 8.745, 0, 0, 0, 12.255, 20.8874, -429.984, -7.64962)
