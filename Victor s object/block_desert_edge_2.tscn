@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://chhlniddfw1fn"]
+[gd_scene load_steps=8 format=3 uid="uid://chhlniddfw1fn"]
 
 [ext_resource type="PackedScene" uid="uid://dbylqw3i7tx0i" path="res://models/props/block-grass-edge.glb" id="1_rdtg4"]
 [ext_resource type="Texture2D" uid="uid://72ldk18ropuj" path="res://models/props/Textures/colormap.png" id="2_ivkdl"]
 [ext_resource type="PackedScene" uid="uid://vj50afnwj5rx" path="res://objects/desert_plant.tscn" id="3_rik1y"]
 [ext_resource type="PackedScene" uid="uid://dmequtx2oso1f" path="res://models/props/rocks.glb" id="4_1024l"]
+[ext_resource type="PackedScene" path="res://objects/dither_obstacle.tscn" id="5_d7c0p"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3a3mu"]
 albedo_texture = ExtResource("2_ivkdl")
@@ -102,3 +103,5 @@ transform = Transform3D(0.0787467, 0, 0.183845, 0, 0.2, 0, -0.183845, 0, 0.07874
 
 [node name="rocks8" parent="." index="27" instance=ExtResource("4_1024l")]
 transform = Transform3D(-0.0826718, 0, 0.182114, 0, 0.2, 0, -0.182114, 0, -0.0826718, -0.428151, 0.967855, 0.171123)
+
+[node name="DitherObstacle" parent="." index="28" instance=ExtResource("5_d7c0p")]

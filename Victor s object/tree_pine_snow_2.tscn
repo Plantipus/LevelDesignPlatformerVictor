@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://davkudeabkl0m"]
+[gd_scene load_steps=6 format=3 uid="uid://davkudeabkl0m"]
 
 [ext_resource type="PackedScene" uid="uid://d7r6t5jlxoeh" path="res://models/props/tree-pine-snow.glb" id="1_nic45"]
 [ext_resource type="Texture2D" uid="uid://0odt7cvj574e" path="res://models/core_models/Textures/colormap.png" id="2_v5p7c"]
+[ext_resource type="PackedScene" path="res://objects/dither_obstacle.tscn" id="3_3p4qg"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dpvax"]
 albedo_texture = ExtResource("2_v5p7c")
@@ -19,3 +20,6 @@ surface_material_override/0 = SubResource("StandardMaterial3D_dpvax")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="tree-pine-snow/StaticBody3D" index="0"]
 shape = SubResource("ConcavePolygonShape3D_113no")
+
+[node name="DitherObstacle" parent="." index="1" instance=ExtResource("3_3p4qg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.139271, 0.205189, 0.115716)

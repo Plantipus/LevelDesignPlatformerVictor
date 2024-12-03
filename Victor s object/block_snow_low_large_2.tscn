@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://dwbjgof60s085"]
+[gd_scene load_steps=4 format=3 uid="uid://dwbjgof60s085"]
 
 [ext_resource type="PackedScene" uid="uid://c87pdxnhaaj1u" path="res://models/props/block-snow-low-large.glb" id="1_7uvv2"]
+[ext_resource type="PackedScene" path="res://objects/dither_obstacle.tscn" id="2_mx2dj"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_qyg7u"]
 size = Vector3(1.96326, 0.45137, 2.07776)
@@ -12,3 +13,5 @@ size = Vector3(1.96326, 0.45137, 2.07776)
 [node name="CollisionShape3D" type="CollisionShape3D" parent="block-snow-low-large/StaticBody3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00629634, 0.229567, 0.0119747)
 shape = SubResource("BoxShape3D_qyg7u")
+
+[node name="DitherObstacle" parent="." index="1" instance=ExtResource("2_mx2dj")]

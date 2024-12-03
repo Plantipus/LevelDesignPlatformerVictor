@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://brujyjx2qqg4y"]
+[gd_scene load_steps=7 format=3 uid="uid://brujyjx2qqg4y"]
 
 [ext_resource type="PackedScene" uid="uid://biyd6x403gvny" path="res://models/core_models/platform-falling.glb" id="1_5man8"]
 [ext_resource type="Texture2D" uid="uid://72ldk18ropuj" path="res://models/props/Textures/colormap.png" id="2_4mjy7"]
+[ext_resource type="PackedScene" path="res://objects/dither_obstacle.tscn" id="3_74s5u"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xec8c"]
 albedo_texture = ExtResource("2_4mjy7")
@@ -26,3 +27,6 @@ sync_to_physics = false
 [node name="CollisionShape3D" type="CollisionShape3D" parent="AnimatableBody3D" index="0"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.000549316, 0.260178, -0.00131989)
 shape = SubResource("BoxShape3D_cypsh")
+
+[node name="DitherObstacle" parent="." index="2" instance=ExtResource("3_74s5u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8116, 1.02036, 1.50427)
