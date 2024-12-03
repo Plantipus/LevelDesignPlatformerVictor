@@ -1,0 +1,106 @@
+[gd_scene load_steps=4 format=3 uid="uid://bxnpbbast8rhv"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_8gg41"]
+lifetime_randomness = 0.4
+gravity = Vector3(0, -1.48, 0)
+scale_min = 0.0
+scale_max = 0.5
+scale_over_velocity_max = 8.35
+anim_speed_max = 8.11
+turbulence_enabled = true
+turbulence_noise_strength = 0.01
+turbulence_noise_scale = 0.1
+turbulence_noise_speed_random = 0.98
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n3ngn"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_gxps4"]
+material = SubResource("StandardMaterial3D_n3ngn")
+radius = 0.05
+height = 0.1
+
+[node name="Node3D" type="Node3D"]
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.38891, 0)
+amount = 20
+amount_ratio = 0.919
+sub_emitter = NodePath(".")
+lifetime = 16.75
+preprocess = 11.32
+randomness = 0.75
+trail_lifetime = 3.13
+process_material = SubResource("ParticleProcessMaterial_8gg41")
+draw_pass_1 = SubResource("SphereMesh_gxps4")
+
+[node name="GPUParticles3D2" type="GPUParticles3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.721667, 2.38891, 0.748446)
+amount = 20
+amount_ratio = 0.919
+sub_emitter = NodePath(".")
+lifetime = 16.75
+preprocess = 11.32
+randomness = 0.75
+trail_lifetime = 3.13
+process_material = SubResource("ParticleProcessMaterial_8gg41")
+draw_pass_1 = SubResource("SphereMesh_gxps4")
+
+[node name="GPUParticles3D3" type="GPUParticles3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.09522, 2.38891, 0.748446)
+amount = 20
+amount_ratio = 0.919
+sub_emitter = NodePath(".")
+lifetime = 16.75
+preprocess = 11.32
+randomness = 0.75
+trail_lifetime = 3.13
+process_material = SubResource("ParticleProcessMaterial_8gg41")
+draw_pass_1 = SubResource("SphereMesh_gxps4")
+
+[node name="GPUParticles3D4" type="GPUParticles3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.09522, 2.38891, -0.563094)
+amount = 20
+amount_ratio = 0.919
+sub_emitter = NodePath(".")
+lifetime = 16.75
+preprocess = 11.32
+randomness = 0.75
+trail_lifetime = 3.13
+process_material = SubResource("ParticleProcessMaterial_8gg41")
+draw_pass_1 = SubResource("SphereMesh_gxps4")
+
+[node name="GPUParticles3D5" type="GPUParticles3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40788, 2.38891, -0.563094)
+amount = 20
+amount_ratio = 0.919
+sub_emitter = NodePath(".")
+lifetime = 16.75
+preprocess = 11.32
+randomness = 0.75
+trail_lifetime = 3.13
+process_material = SubResource("ParticleProcessMaterial_8gg41")
+draw_pass_1 = SubResource("SphereMesh_gxps4")
+
+[node name="GPUParticles3D6" type="GPUParticles3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40788, 2.38891, 1.10637)
+amount = 20
+amount_ratio = 0.919
+sub_emitter = NodePath(".")
+lifetime = 16.75
+preprocess = 11.32
+randomness = 0.75
+trail_lifetime = 3.13
+process_material = SubResource("ParticleProcessMaterial_8gg41")
+draw_pass_1 = SubResource("SphereMesh_gxps4")
+
+[node name="GPUParticles3D7" type="GPUParticles3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.512677, 2.38891, -2.54194)
+amount = 20
+amount_ratio = 0.919
+sub_emitter = NodePath(".")
+lifetime = 16.75
+preprocess = 11.32
+randomness = 0.75
+trail_lifetime = 3.13
+process_material = SubResource("ParticleProcessMaterial_8gg41")
+draw_pass_1 = SubResource("SphereMesh_gxps4")

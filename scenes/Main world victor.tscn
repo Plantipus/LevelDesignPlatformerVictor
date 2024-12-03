@@ -1,4 +1,4 @@
-[gd_scene load_steps=68 format=3 uid="uid://dmtd4jk4ugt8c"]
+[gd_scene load_steps=69 format=3 uid="uid://dmtd4jk4ugt8c"]
 
 [ext_resource type="Environment" uid="uid://bqnqgflivjvue" path="res://scenes/main-environment.tres" id="1_oygcb"]
 [ext_resource type="PackedScene" uid="uid://dl2ed4gkybggf" path="res://objects/player.tscn" id="2_qbbhe"]
@@ -44,6 +44,7 @@
 [ext_resource type="PackedScene" uid="uid://v5smarwfj8q3" path="res://Victor s object/hedge_corner_2.tscn" id="36_menye"]
 [ext_resource type="PackedScene" uid="uid://ceojd3peoovj2" path="res://Victor s object/block_snow_large_tall_2.tscn" id="37_q7ho8"]
 [ext_resource type="PackedScene" uid="uid://cxijgrdpu0fkp" path="res://Victor s object/Half snow half  grass tree.tscn" id="40_0lo3j"]
+[ext_resource type="PackedScene" uid="uid://bxnpbbast8rhv" path="res://Victor s object/snow particle.tscn" id="40_vkjdp"]
 [ext_resource type="PackedScene" uid="uid://dtx06f4ekfgqc" path="res://Victor s object/snowy mountain.tscn" id="42_sncs5"]
 [ext_resource type="PackedScene" uid="uid://ctmsvh7l1enuh" path="res://Victor s object/ice_grass.tscn" id="43_hsnc6"]
 [ext_resource type="PackedScene" uid="uid://bw7nsi1v8g30s" path="res://models/props/poles.glb" id="43_quy6b"]
@@ -2843,6 +2844,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.76976, -427.705, 5.93835)
 
 [node name="crate5" parent="Start room" instance=ExtResource("52_8frkv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.76976, -427.189, 5.44512)
+
+[node name="Snow particles" parent="Start room" instance=ExtResource("40_vkjdp")]
+transform = Transform3D(5.26, 0, 0, 0, 5.26, 0, 0, 0, 5.26, 20.8874, -417.306, -10.1167)
+
+[node name="Snow particles2" parent="Start room" instance=ExtResource("40_vkjdp")]
+transform = Transform3D(11.45, 0, 0, 0, 8.745, 0, 0, 0, 12.255, 20.8874, -429.984, -7.64962)
 
 [node name="Grass section" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0733299, -0.0662766, 0.117851)
