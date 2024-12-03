@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://ct3jqgtvmr86q" path="res://models/props/block-grass-large.glb" id="1_07s5b"]
 [ext_resource type="Texture2D" uid="uid://bvj25ii6y01ic" path="res://models/prototyping/models/Textures/colormap.png" id="2_pb3wx"]
 [ext_resource type="PackedScene" uid="uid://bqpuqeqjnltfm" path="res://Victor s object/grass patch_2.tscn" id="3_llk83"]
-[ext_resource type="PackedScene" path="res://objects/dither_obstacle.tscn" id="4_7nlur"]
+[ext_resource type="PackedScene" uid="uid://dqe83pil81wbx" path="res://objects/dither_obstacle.tscn" id="4_7nlur"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_eq81i"]
 albedo_texture = ExtResource("2_pb3wx")
@@ -21,7 +21,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_eq81i")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="block-grass-large/StaticBody3D2" index="0"]
 shape = SubResource("ConcavePolygonShape3D_chwy3")
 
-[node name="grass2" parent="." index="1" instance=ExtResource("3_llk83")]
-transform = Transform3D(0.696335, 0, 0, 0, 0.696335, 0, 0, 0, 0.696335, -7.56926, 0.132844, -4.75502)
+[node name="DitherObstacle" parent="." index="1" instance=ExtResource("4_7nlur")]
 
-[node name="DitherObstacle" parent="." index="2" instance=ExtResource("4_7nlur")]
+[node name="grass2" parent="." index="2" instance=ExtResource("3_llk83")]
+transform = Transform3D(0.696335, 0, 0, 0, 0.696335, 0, 0, 0, 0.696335, -7.56926, 0.132844, -4.75502)

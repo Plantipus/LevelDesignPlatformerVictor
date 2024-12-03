@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bqpuqeqjnltfm"]
 
 [ext_resource type="PackedScene" uid="uid://drdt1lv4menw6" path="res://models/props/grass.glb" id="1_kqdkm"]
-[ext_resource type="PackedScene" path="res://objects/dither_obstacle.tscn" id="2_34sw6"]
+[ext_resource type="PackedScene" uid="uid://dqe83pil81wbx" path="res://objects/dither_obstacle.tscn" id="2_34sw6"]
 
 [node name="grass2" type="Node3D"]
 transform = Transform3D(0.696335, 0, 0, 0, 0.696335, 0, 0, 0, 0.696335, -7.64067, 0.0999323, -4.67885)
@@ -313,4 +313,4 @@ transform = Transform3D(-0.999759, 0, -0.0219719, 0, 1, 0, 0.0219719, 0, -0.9997
 transform = Transform3D(0.00544547, 0, 0.999985, 0, 1, 0, -0.999985, 0, 0.00544547, 9.96214, 1.18739, 5.6125)
 
 [node name="DitherObstacle" parent="." instance=ExtResource("2_34sw6")]
-transform = Transform3D(1.43609, 0, 0, 0, 1.43609, 0, 0, 0, 1.43609, 0, 0, 0)
+transform = Transform3D(1.43609, 0, 0, 0, 1.43609, 0, 0, 0, 1.43609, 10.9781, 1.50779, 6.91653)
