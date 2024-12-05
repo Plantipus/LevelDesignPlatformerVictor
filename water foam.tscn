@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://dqpsxij0pvup2"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_kfsw7"]
+gravity = Vector3(0, -23.745, 0)
+turbulence_noise_strength = 0.0
+turbulence_noise_scale = 0.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vcsx1"]
+albedo_color = Color(0.59542, 0.997898, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_icd1j"]
+material = SubResource("StandardMaterial3D_vcsx1")
+size = Vector3(0.78, 1.45, 0.43)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="GPUParticles3D" type="GPUParticles3D" parent="."]
+transparency = 0.21
+amount = 5
+amount_ratio = 0.3524
+sub_emitter = NodePath(".")
+lifetime = 1.25
+speed_scale = 0.5
+trail_lifetime = 1.21
+process_material = SubResource("ParticleProcessMaterial_kfsw7")
+draw_pass_1 = SubResource("BoxMesh_icd1j")
